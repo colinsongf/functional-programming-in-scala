@@ -1,0 +1,3 @@
+foldRight(List(1,2,3), Nil:List[Int])(Cons(_, _))
+
+This copies the list. Or does it return the same list?
