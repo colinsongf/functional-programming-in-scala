@@ -1,0 +1,6 @@
+Using foldRight, we cannot immediately halt recursion when we see a 0.0.
+Using foldRight, our options are limited to modifying the argument function f, but
+it's arguments are already traversed when the function is applied.
+
+I.e. the statement f(x, foldRight(xs, fallBack)(f)) is 'written out', before
+f is applied.
